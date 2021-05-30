@@ -15,6 +15,7 @@ public class SpeakerController {
     @Autowired
     SpeakerRepository speakerRepository;
     @GetMapping
+
     @RequestMapping("{id}")
     public Speaker get(@PathVariable Long id){
         return speakerRepository.getOne(id);
